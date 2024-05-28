@@ -17,7 +17,7 @@ const post = {
 };
 
 const postComment = async () => {
-	await $fetch('http://127.0.0.1:8080/api/comment', {
+	await $fetch('https://blog-api-gamma-silk.vercel.app/api/comment', {
 		method: 'POST',
 		headers: {
 			Authorization: authStore.$state.loggedIn ? `Bearer ${authToken}` : '',

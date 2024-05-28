@@ -8,7 +8,7 @@ const user = {
 const errors = ref([]);
 
 const signIn = async () => {
-	await $fetch('http://127.0.0.1:8080/api/sign-in', {
+	await $fetch('https://blog-api-gamma-silk.vercel.app/api/sign-in', {
 		method: 'POST',
 		body: {
 			username: user.username,

@@ -19,8 +19,8 @@ const {
 	'blogComment',
 	async () => {
 		const [blog, comments] = await Promise.all([
-			$fetch(`http://127.0.0.1:8080/api/blogs/${id}`),
-			$fetch(`http://127.0.0.1:8080/api/comment/${id}`),
+			$fetch(`https://blog-api-gamma-silk.vercel.app/api/blogs/${id}`),
+			$fetch(`https://blog-api-gamma-silk.vercel.app/api/comment/${id}`),
 		]);
 
 		return { blog, comments };

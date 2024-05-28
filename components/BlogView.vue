@@ -1,5 +1,5 @@
 <script setup>
-const { pending, data: blogsData } = await useFetch('http://127.0.0.1:8080/api/blogs', {
+const { pending, data: blogsData } = await useFetch('https://blog-api-gamma-silk.vercel.app/api/blogs', {
 	lazy: true,
 });
 </script>
